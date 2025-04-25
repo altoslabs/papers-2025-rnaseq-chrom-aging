@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "sscec"
+version = "0.1.0"
+description = "This project contains scripts, along with data, required to reproduce the figures in the paper titled - Macroscopic Analyses of RNA-Seq Data to Reveal Chromatin Modifications in Aging and Disease (to be submitted to eLife).The scripts are designed to run with Python 3.10.7, so ensure you have the correct version installed."
+authors = ["Achal Mahajan <amahajan@altoslabs.com>",
+            "Francesca Ratti <fratti@altoslabs.com>",
+            "Ban Wang <bwang@altoslabs.com>",
+            "Vishrawas Gopalakrishnan <vgopalakrishnan@altoslabs.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^1.5.2"
+numpy = "^1.23.5"
+scikit-learn = "^1.1.3"
+pyyaml = "^6.0"
+seaborn = "^0.12.1"
+scikit-learn-extra = "^0.2.0"
+dcor = "^0.5.7"
+statsmodels = "0.14.0"
+pydeseq2 = "^0.3.3"
+jupyter = "^1.0.0"
+statannotations = "0.4.0"
+pymannkendall = "^1.4.3"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
